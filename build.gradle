@@ -37,10 +37,12 @@ compileTestKotlin {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 
 dependencies {
+    compile("love.sola.zscnsd.wts:wts-common:$version")
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-web')
